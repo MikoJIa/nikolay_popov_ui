@@ -10,7 +10,7 @@ from pages.customer_multimedia_product import CustomerMultimediaProductPage
 def driver(request):
     chrome_driver = webdriver.Chrome()
     chrome_driver.maximize_window()
-    chrome_driver.implicitly_wait(10)
+    chrome_driver.implicitly_wait(20)
     yield chrome_driver
     chrome_driver.quit()
 
